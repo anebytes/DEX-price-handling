@@ -108,6 +108,7 @@ contract DEX {
     }
 
     function deposit() public payable returns (uint256 tokensDeposited) {
+        require(msg.value > 0);
         uint256 ethReserve = address(this).balance.sub(msg.value);
         uint256 tokenReserve = token.balanceOf(address(this));
         uint256 tokenDeposit;

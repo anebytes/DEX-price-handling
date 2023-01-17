@@ -142,9 +142,7 @@ module.exports = {
 
       //      url: "https://speedy-nodes-nyc.moralis.io/XXXXXXXXXXXXXXXXXXXXXXXXX/eth/goerli", // <---- YOUR MORALIS ID! (not limited to infura)
 
-      accounts: {
-        mnemonic: mnemonic(),
-      },
+      accounts: [""],
     },
     xdai: {
       url: "https://rpc.xdaichain.com/",
